@@ -1,0 +1,238 @@
+:root {
+  --background-color: #000;
+  --main-color: seashell;
+  --text-color: lightcoral;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 22px;
+  background-color: var(--background-color);
+  color: var(--main-color);
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* HEADER 
+==================================================*/
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  min-height: 69px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  margin: 0 30px;
+}
+
+.nav-menu li {
+  list-style-type: none;
+}
+
+.nav-menu a {
+  margin: 10px;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.nav-menu a:hover {
+  color: var(--text-color);
+}
+
+
+/* MAIN 
+==================================================*/
+
+.mainContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  top: 70px;
+  padding-bottom: 70px;
+}
+
+/* HERO SECTION 
+==================================================*/
+
+#heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 700px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  flex: 1 1200px;
+  background-image: url(image/img-mission-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.heroSectionText {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100px;
+  margin: auto;
+  background-color: var(--background-color);
+}
+
+/* TEA SECTION 
+=================================================*/
+
+.teaSection {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 75%;
+  height: auto;
+  max-width: 1000px;
+  padding-top: 50px;
+}
+
+.teaSectionHead {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.teaSectionHead h2 {
+  margin: 20px 0;
+}
+
+.teaContainer {
+  display: flex;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.teaSection img {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+
+/* LOCATIONS SECTION 
+=================================================*/
+
+.locationsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 1200px;
+  max-height: 500px;
+  max-width: 1200px;
+  width: 80%;
+  padding: 50px 0;
+  margin-top: 70px;
+  background-image: url(image/img-locations-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.locationsHead {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.locationsBox {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.locationsBox h3 {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.locationsBox p {
+  padding: 5% 0;
+  width: 100%;
+}
+
+.location {
+  flex-flow: column wrap;
+  width: 300px;
+  height: 250px;
+  margin: auto 20px;
+  background-color: var(--background-color);
+  opacity: 1;
+}
+
+
+/* FOOTER 
+==================================================*/
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerContact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.footerContact h2 {
+  margin: 20px;
+}
+
+.footerContact h5 {
+  margin: 10px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: left;
+  margin: 0 0 30px 20px;
+}
